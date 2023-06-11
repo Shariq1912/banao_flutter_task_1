@@ -315,7 +315,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 Icons.chat,
                 color: Colors.grey,
               ),
-
               label: 'Chat',
             ),
             BottomNavigationBarItem(
