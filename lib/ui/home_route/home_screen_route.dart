@@ -80,9 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                         ),
-
                         Text(
-
                           "What do you wanna learn today",
                           style: GoogleFonts.inter(
                             textStyle: const TextStyle(
