@@ -74,11 +74,12 @@ class _HomeScreenState extends State<HomeScreen> {
                           style: GoogleFonts.lora(
                             textStyle: const TextStyle(
                               fontSize: 20,
-                              fontWeight: FontWeight.bold,
+                              fontWeight: FontWeight.w700,
                             ),
                           ),
                         ),
                         Text(
+
                           "What do you wanna learn today",
                           style: GoogleFonts.inter(
                             textStyle: const TextStyle(
@@ -91,18 +92,18 @@ class _HomeScreenState extends State<HomeScreen> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            buildButton('Program'),
+                            buildButton('Program','assets/images/prog.png'),
                             const SizedBox(width: 12),
-                            buildButton('Get Help'),
+                            buildButton('Get Help','assets/images/prog.png'),
                           ],
                         ),
                         const SizedBox(height: 8),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            buildButton('Learn  '),
+                            buildButton('Learn  ','assets/images/prog.png'),
                             const SizedBox(width: 12),
-                            buildButton('DD Tracker'),
+                            buildButton('DD Tracker','assets/images/prog.png'),
                           ],
                         ),
                       ],

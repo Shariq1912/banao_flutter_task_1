@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-Widget buildButton(String label) {
+Widget buildButton(String label, String imagePath) {
   return Container(
     width: 173,
     height: 48,
@@ -11,11 +11,12 @@ Widget buildButton(String label) {
     ),
     child: TextButton.icon(
       onPressed: () {},
-      icon: const Padding(
-        padding: EdgeInsets.fromLTRB(1, 0, 8, 0),
-        child: Icon(
-          Icons.download,
-          size: 24.0,
+      icon: Padding(
+        padding: const EdgeInsets.fromLTRB(1, 0, 8, 0),
+        child: Image.asset(
+          imagePath,
+          width: 20,
+          height: 20,
         ),
       ),
       style: TextButton.styleFrom(
