@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class ProgramCard extends StatelessWidget {
   final String imagePath;
-  final String category;
+  final String? category;
   final String title;
   //final String subtitle;
   final String lessons;
@@ -33,7 +33,7 @@ class ProgramCard extends StatelessWidget {
               Container(
                 margin: EdgeInsets.all(10),
                 child: Text(
-                  category,
+                  category!,
                   style: GoogleFonts.inter(
                     fontSize: 13,
                     fontWeight: FontWeight.normal,

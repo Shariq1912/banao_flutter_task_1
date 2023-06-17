@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class EventCard extends StatelessWidget {
   final String imagePath;
-  final String category;
+  final String? category;
   final String title;
   final String lessons;
 
@@ -31,7 +31,7 @@ class EventCard extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(10),
               child: Text(
-                category,
+                category!,
                 style: GoogleFonts.inter(
                   fontSize: 13,
                   fontWeight: FontWeight.normal,
